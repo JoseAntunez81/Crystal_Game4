@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Cristal Collector</h1>
+            <p>You will be given a random number at the start of the game. 
+                There are four crystals below. By clicking on a crystal you will add a specific amount 
+                of points to your total score. You win the game by matching your total score to random number,
+                 you lose the game if your total score goes above the random number. 
+                 The value of each crystal is hidden from you until you click on it. 
+                 Each time when the game starts, the game will change the values of each crystal
+            </p>
+        </div>
+     </div> 
+     
+     <!-- Row numnber one for the computer score -->
+     <div class="container d-flex justify-content-center">
+        <div class="row">
+               <div class="col-sm-6">
+                   <div class="card mt-4 text-center" style="width: 15rem;">
+                       <div class="card-header text-white bg-primary">Computer Score</div>
+                           <div class="card-body">
+                               <p class="card-text" id="computer_score">0</p>
+                       </div>
+                   </div>             
+               </div>
+               <div class="col-sm-6">
+                   <div class="card  mt-4 text-center" style="width: 15rem;">
+                       <div class="card-header text-white bg-primary">Your Score</div>
+                           <div class="card-body">
+                               <p class="card-text" id="user_score">0</p>
+                       </div>
+                   </div>             
+               </div>        
+           </div>
+       </div>
+       
+    <!-- Row number two display the gems in a card -->
+<div class="container-fluid mt-3 text-center">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="diamond">
+                <img class="card-img-top" src="assets/images/diamond.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Diamond</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="blue">
+                <img class="card-img-top" src="assets/images/blue.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Blue</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="purple">
+                <img class="card-img-top" src="assets/images/purple.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Purple</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" id="ruby">
+                <img class="card-img-top" src="assets/images/ruby.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Ruby</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+ <!-- Row numnber 3 for the user win and lose -->
+ <div class="container d-flex justify-content-center">
+ <div class="row mb-3">
+        <div class="col-sm-4">
+            <div class="card  mt-4 text-center " style="width: 15rem;">
+                <div class="card-header text-white bg-dark ">Win</div>
+                    <div class="card-body">
+                        <p class="card-text" id="wins">0</p>
+                </div>
+            </div>             
+        </div>
+        <div class="col-sm-4">
+            <div class="card  mt-4 text-center " style="width: 15rem;">
+                <div class="card-header text-white bg-dark ">Counter</div>
+                    <div class="card-body">
+                        <p class="card-text" id="counter">0</p>
+                </div>
+            </div>             
+        </div>        
+        <div class="col-sm-4">
+            <div class="card  mt-4 text-center " style="width: 15rem;">
+                <div class="card-header text-white bg-dark ">Lost</div>
+                    <div class="card-body">
+                        <p class="card-text" id="loss">0</p>
+                </div>
+            </div>             
+        </div>        
+    </div>
+</div>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+</body>
+</html>
